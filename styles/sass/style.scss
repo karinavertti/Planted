@@ -1,0 +1,343 @@
+@import "setup";
+
+// from styleguide:
+
+$headingFont: 'Josefin Sans', sans-serif;
+$baseFont: 'Roboto', sans-serif;
+
+$primary: #2C2C2C;
+$highlight: #F8E71C;
+$offWhite: #F0EFED;
+$darkGreen: #074115;
+$buttonColor: #0E902D;
+
+
+
+// get in touch // hero header other pages
+h2 {
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+
+// our mission // blog post title p2
+h4 {
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 4.3rem;
+    letter-spacing: 1.3px;
+}
+
+
+
+// tuesday october
+.heading7 {
+font-family: $headingFont;
+font-weight: bold;
+font-size: 20px;
+}
+
+// p {
+//     font-family: $baseFont;
+//     font-weight: normal;
+//     font-size: 1.6rem;
+//     line-height: 2.6rem;
+// }
+
+// name, email
+.formText {
+    font-family: $baseFont;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+// ****************************************************
+// NAVIGATION STYLES
+
+.logo p {
+    font-family: $headingFont;
+    font-size: 3.5rem;
+    color: #FFF;
+}
+
+header {
+    background-image: url(../assets/home-image-1.jpg);
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    }
+
+    .topBar {
+        display: flex;
+        align-content: flex-end;
+        padding-top: 30px;
+
+        ul {
+            display: flex;
+
+            a {
+                font-family: $headingFont;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                padding-left: 44px;
+            }
+        }
+    }
+
+// header {
+// }
+
+header .wrapper {
+    height: 100%;
+}
+
+    .homeHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        // border: 2px solid red;
+
+
+        h1 {
+            font-family: $headingFont;
+            font-weight: normal;
+            font-size: 13rem;
+            color: #FFF;
+            text-align: center;
+            line-height: 0.8;
+            z-index: 10;
+            // height: 100%;
+        }
+    
+        span {
+            color: $highlight;
+        }
+
+        img {
+            width: 45%;
+            position: absolute;
+            // right: -122px;
+            // top: 140px;
+            right: 0;
+            bottom: -70px;
+        }
+    }
+
+// ****************************************************
+// ABOUT STYLES
+
+.intro {
+    background: $offWhite;
+    text-align: center;
+    padding: 190px 0;
+        p {
+            padding: 25px 0 32px 0;
+            width: 90%;
+            margin: 0 auto;
+        }
+}
+
+.readMore {
+    background: $buttonColor;
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 1.6rem;
+    // text-align: center;
+    letter-spacing: 1px;
+    padding: 14px 25px 10px 25px;
+}
+
+// what is planted
+h3 {
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 4.6rem;
+    // text-align: center;
+    letter-spacing: 1.3px;
+}
+
+// ****************************************************
+// POST STYLES
+
+.blogPosts {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 2fr;
+    grid-template-rows: 625px;
+    // justify-content: space-between;
+    // position: relative;
+    // height: 400px;
+    // padding: 400px 0;
+}
+
+
+.postLeft {
+    // width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // align-self: flex-end;
+    text-align: right;
+    position: relative;
+    // align-items: flex-end;
+    // padding-bottom: 300px;
+
+    img {
+        box-shadow: 15px 15px $highlight;
+        position: absolute;
+        // width: 42%;
+        left: 0;
+        top: -35px;
+        // opacity: 0;
+    }
+
+    article {
+        // text-align: right;
+        // display: inline-block;
+        padding-left: 100px;
+        padding-bottom: 50px;
+            p {
+                padding: 20px 0 30px 0;
+            }
+    }
+
+}
+
+
+.postRight {
+    // width: 42%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    position: relative;
+
+    img {
+        box-shadow: -15px 15px $highlight;
+        position: absolute;
+        width: 100%;
+        // width: 42%;
+        right: 0;
+        bottom: -35px;
+    }
+
+    article {
+        padding-top: 80px;
+        padding-right: 100px;
+            p {
+                padding: 20px 0 30px 0;
+            }
+    }
+}
+
+
+
+// upcoming, unique
+h6 {
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+
+// ****************************************************
+// MIDDLE MENU STYLES
+
+.midMenu {
+    background: $offWhite;
+}
+
+.midFlex {
+    display: flex;
+    padding: 100px 0 60px 0;
+}
+
+.midLeft,
+.midRight {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.midMenuElement {
+    p {
+        padding: 20px 0 20px 60px;
+    }
+
+    i {
+        background: $highlight;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 2rem;
+        // display: inline-block;
+    }
+
+    h6 {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+}
+
+// ****************************************************
+// ABOUT FOUNDER STYLES
+
+.founder {
+    background: $offWhite;
+}
+
+.founderFlex {
+    display: flex;
+    padding: 100px 0 80px 0;
+        img {
+            // width: 100%;
+            box-shadow: 15px 15px $highlight;
+        }
+        article{
+            padding-left: 100px;
+        }
+            p {
+                padding: 20px 0 40px 0;
+                }
+}
+
+// figure {
+// }
+
+
+// planted's founder // p1
+h5 {
+    font-family: $headingFont;
+    font-weight: bold;
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+}
+
+// ****************************************************
+// GALLERY STYLES
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 100%;
+    grid-gap: 30px;
+    padding: 100px 0;
+}
+
+// ****************************************************
+// FOOTER STYLES
+
+footer {
+    background: $primary;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
