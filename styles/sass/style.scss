@@ -1,5 +1,6 @@
 @import "setup";
 
+
 // from styleguide:
 
 $headingFont: 'Josefin Sans', sans-serif;
@@ -13,31 +14,6 @@ $buttonColor: #0E902D;
 
 
 
-// get in touch // hero header other pages
-h2 {
-    font-family: $headingFont;
-    font-weight: bold;
-    font-size: 8rem;
-}
-
-
-// our mission // blog post title p2
-h4 {
-    font-family: $headingFont;
-    font-weight: bold;
-    font-size: 4.3rem;
-    letter-spacing: 1.3px;
-}
-
-
-
-// tuesday october
-.heading7 {
-font-family: $headingFont;
-font-weight: bold;
-font-size: 20px;
-}
-
 // p {
 //     font-family: $baseFont;
 //     font-weight: normal;
@@ -45,13 +21,7 @@ font-size: 20px;
 //     line-height: 2.6rem;
 // }
 
-// name, email
-.formText {
-    font-family: $baseFont;
-    font-weight: lighter;
-    font-size: 2rem;
-    line-height: 3.2rem;
-}
+
 
 // ****************************************************
 // NAVIGATION STYLES
@@ -341,3 +311,7 @@ footer {
     color: #fff;
     padding: 5px 0;
 }
+
+
+
+@import "blogStyle";
