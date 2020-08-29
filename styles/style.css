@@ -648,6 +648,7 @@ main {
   font-weight: bold;
   font-size: 3.8rem;
   letter-spacing: 1.3px;
+  padding-bottom: 10px;
 }
 
 .postImg {
@@ -665,8 +666,21 @@ main {
   padding: 340px 0 40px 40px;
 }
 
-.blogPost p {
+.blogPost .date {
   padding-bottom: 40px;
+}
+
+.blogPost span {
+  font-style: italic;
+}
+
+.blogPost em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.blogPost p {
+  padding-bottom: 15px;
 }
 
 .comments {

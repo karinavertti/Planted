@@ -1,0 +1,82 @@
+$headingFont: 'Josefin Sans', sans-serif;
+$baseFont: 'Roboto', sans-serif;
+
+$primary: #2C2C2C;
+$highlight: #F8E71C;
+$offWhite: #F0EFED;
+$darkGreen: #074115;
+$buttonColor: #0E902D;
+
+.contactHeader {
+    background-image: url(../assets/contact-header-1.jpg);
+    height: 465px;
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    // object-fit: contain;
+}
+
+
+// get in touch // hero header other pages
+h2 {
+    // font-family: $headingFont;
+    // font-weight: bold;
+    // font-size: 8rem;
+    // color: $highlight;
+    padding-top: 200px;
+    width: 30%;
+    line-height: 78px;
+}
+
+main {
+    height: 400px;
+    position: relative;
+}
+
+.contact {
+    padding-top: 120px;
+}
+
+.social {
+    color: $buttonColor;
+    font-size: 2rem;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $headingFont;
+    font-size: 2rem;
+    em {
+        font-weight: bold;
+    }
+}
+
+.contactForm {
+    width: 60%;
+    padding: 35px 35px 35px 35px;
+    background: #FFF;
+    box-shadow: -15px 15px $highlight;
+    position: absolute;
+    top: -200px;
+    right: 50px;
+
+    input, textarea {
+        background-color: #FFF;
+        
+    }
+    
+}
+
+// .formBox {
+//     box-shadow: -15px 15px $highlight;
+
+// }
+
+
+
+    

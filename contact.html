@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- link to fontawesome -->
+    <script src="https://kit.fontawesome.com/9df38b747b.js" crossorigin="anonymous"></script>
+
+    <!-- link to styles -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    
+
+
+    <!-- header -->
+    <div class="contactHeader">
+
+
+        <!-- navigation -->
+        <nav class="topBar">
+            <!-- wrapper -->
+            <div class="wrapper flexBar">
+
+                <div class="logo">
+                    <p>Planted</p>
+                </div>
+
+                <ul class="menuBar">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><i class="far fa-bars"></i></li>
+                </ul>
+
+            </div> <!-- end of wrapper -->
+        </nav>
+
+        <!-- home header -->
+        <div class="wrapper">
+            <!-- <div class="headerTxt"> -->
+            <h2>Get in Touch</h2>
+            <!-- </div> -->
+        </div> <!-- end of homeHeader -->
+
+
+    </div>
+
+    <main>
+
+        <div class="wrapper contact">
+            <ul class="social">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+            </ul>
+
+            <p class="email"><em>info@email.com</em></p>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </div>
+
+        <!-- <div class="formBox"> -->
+        <form action="#" method="#" class="contactForm" name="contactForm">
+            <div class="flexForm">
+                <div class="userInfo">
+                    <label for="userName" class="sr-only">Provide your name</label>
+                    <input type="text" name="userName" placeholder="Name">
+
+                    <label for="userEmail" class="sr-only">Provide your email address</label>
+                    <input type="email" name="emailAddress" placeholder="Email address">
+                </div>
+
+                <div class="userMessage">
+                    <label for="userMessage" class="sr-only">Provide a message</label>
+                    <textarea name="userMessage" maxlength="500" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <button class="cta" type="submit">Submit</button>
+
+        </form>
+        <!-- </div> -->
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+
+        <!-- <div class="footerText"> -->
+        <p>Copyright © 2018 HackerYou | <a href="https://junocollege.com/" target="blank">Created at Juno
+                College</a></p>
+        <!-- </div> -->
+
+    </footer>
+
 </body>
+
 </html>
