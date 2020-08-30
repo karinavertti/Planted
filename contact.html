@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
     <!-- link to google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
         rel="stylesheet">
@@ -20,8 +21,7 @@
 
 
     <!-- header -->
-    <div class="contactHeader">
-
+    <header class="contactHeader">
 
         <!-- navigation -->
         <nav class="topBar">
@@ -43,17 +43,15 @@
             </div> <!-- end of wrapper -->
         </nav>
 
-        <!-- home header -->
+        <!-- contact heading -->
         <div class="wrapper">
-            <!-- <div class="headerTxt"> -->
-            <h2>Get in Touch</h2>
-            <!-- </div> -->
-        </div> <!-- end of homeHeader -->
+            <h5>Get in Touch</h5>
+        </div>  <!-- end of contact heading -->
+
+    </header>
 
 
-    </div>
-
-    <main>
+    <main class="contactMain">
 
         <div class="wrapper contact">
             <ul class="social">
@@ -68,43 +66,37 @@
             <p>123 Queen Street West, Unit 10</p>
             <p>Toronto, Ontario</p>
             <p>M5V2D5</p>
-        </div>
+        </div>  <!-- end of wrapper contact -->
 
-        <!-- <div class="formBox"> -->
         <form action="#" method="#" class="contactForm" name="contactForm">
+
             <div class="flexForm">
+
                 <div class="userInfo">
                     <label for="userName" class="sr-only">Provide your name</label>
                     <input type="text" name="userName" placeholder="Name">
 
                     <label for="userEmail" class="sr-only">Provide your email address</label>
                     <input type="email" name="emailAddress" placeholder="Email address">
-                </div>
+                </div>  <!-- end of userInfo -->
 
                 <div class="userMessage">
                     <label for="userMessage" class="sr-only">Provide a message</label>
                     <textarea name="userMessage" maxlength="500" placeholder="Message"></textarea>
-                </div>
-            </div>
+                </div>  <!-- end of userMessage -->
+            </div>  <!-- end of flexForm -->
+
             <button class="cta" type="submit">Submit</button>
 
         </form>
-        <!-- </div> -->
 
     </main>
 
 
-
-
-
-
-
     <footer>
 
-        <!-- <div class="footerText"> -->
         <p>Copyright © 2018 HackerYou | <a href="https://junocollege.com/" target="blank">Created at Juno
                 College</a></p>
-        <!-- </div> -->
 
     </footer>
 

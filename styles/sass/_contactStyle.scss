@@ -7,29 +7,31 @@ $offWhite: #F0EFED;
 $darkGreen: #074115;
 $buttonColor: #0E902D;
 
+
+// **************************************************** //
+// HEADER & NAVIGATION STYLES
+// **************************************************** //
+
 .contactHeader {
     background-image: url(../assets/contact-header-1.jpg);
     height: 465px;
     background-size: cover;
     background-position: center;
-    // background-attachment: fixed;
     background-repeat: no-repeat;
-    // object-fit: contain;
 }
 
-
 // get in touch // hero header other pages
-h2 {
-    // font-family: $headingFont;
-    // font-weight: bold;
-    // font-size: 8rem;
-    // color: $highlight;
+h5 {
     padding-top: 200px;
     width: 30%;
     line-height: 78px;
 }
 
-main {
+// **************************************************** //
+// MAIN STYLES
+// **************************************************** //
+
+.contactMain {
     height: 400px;
     position: relative;
 }
@@ -56,6 +58,10 @@ main {
     }
 }
 
+// **************************************************** //
+// FORM STYLES
+// **************************************************** //
+
 .contactForm {
     width: 60%;
     padding: 35px 35px 35px 35px;
@@ -72,11 +78,3 @@ main {
     
 }
 
-// .formBox {
-//     box-shadow: -15px 15px $highlight;
-
-// }
-
-
-
-    

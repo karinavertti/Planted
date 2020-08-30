@@ -280,13 +280,7 @@ a {
   color: white;
 }
 
-.logo p {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3.5rem;
-  color: #FFF;
-}
-
-header {
+.homeHeader {
   background-image: url(../assets/home-image-1.jpg);
   height: 65vh;
   background-size: cover;
@@ -296,6 +290,10 @@ header {
   position: relative;
 }
 
+.homeHeader .wrapper {
+  height: 100%;
+}
+
 .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +301,12 @@ header {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   padding-top: 30px;
+}
+
+.topBar p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #FFF;
 }
 
 .topBar ul {
@@ -318,11 +322,7 @@ header {
   padding-left: 44px;
 }
 
-header .wrapper {
-  height: 100%;
-}
-
-.homeHeader {
+.homeHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +339,7 @@ header .wrapper {
   height: 100%;
 }
 
-.homeHeader h1 {
+.homeHeading h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   font-size: 13rem;
@@ -349,11 +349,11 @@ header .wrapper {
   z-index: 10;
 }
 
-.homeHeader span {
+.homeHeading span {
   color: #F8E71C;
 }
 
-.homeHeader img {
+.homeHeading img {
   width: 45%;
   position: absolute;
   right: 0;
@@ -381,7 +381,7 @@ header .wrapper {
   padding: 14px 25px 10px 25px;
 }
 
-h3 {
+h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 4.6rem;
@@ -461,7 +461,7 @@ h3 {
   padding: 20px 0 30px 0;
 }
 
-h6 {
+h3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 2.8rem;
@@ -501,7 +501,7 @@ h6 {
   font-size: 2rem;
 }
 
-.midMenuElement h6 {
+.midMenuElement h3 {
   display: inline-block;
   padding-left: 15px;
 }
@@ -530,7 +530,7 @@ h6 {
   padding: 20px 0 40px 0;
 }
 
-h5 {
+h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 3.6rem;
@@ -553,13 +553,6 @@ footer {
   padding: 5px 0;
 }
 
-.flexBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-}
-
 .blogHeader {
   background-image: url(../assets/blog-header-1.jpg);
   height: 465px;
@@ -568,7 +561,18 @@ footer {
   background-repeat: no-repeat;
 }
 
-h2 {
+.topBar {
+  background: #000;
+}
+
+.flexBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+h5 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 8rem;
@@ -576,11 +580,7 @@ h2 {
   padding-top: 250px;
 }
 
-.topBar {
-  background: #000;
-}
-
-main {
+.blogMain {
   background: #F0EFED;
   position: relative;
   padding-bottom: 80px;
@@ -643,7 +643,7 @@ main {
   width: 60%;
 }
 
-.flexRight h4 {
+.flexRight h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 3.8rem;
@@ -806,4 +806,65 @@ button {
   font-size: 1.6rem;
   letter-spacing: 1px;
   padding: 14px 25px 10px 25px;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header-1.jpg);
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  padding-top: 200px;
+  width: 30%;
+  line-height: 78px;
+}
+
+.contactMain {
+  height: 400px;
+  position: relative;
+}
+
+.contact {
+  padding-top: 120px;
+}
+
+.social {
+  color: #0E902D;
+  font-size: 2rem;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.email em {
+  font-weight: bold;
+}
+
+.contactForm {
+  width: 60%;
+  padding: 35px 35px 35px 35px;
+  background: #FFF;
+  -webkit-box-shadow: -15px 15px #F8E71C;
+          box-shadow: -15px 15px #F8E71C;
+  position: absolute;
+  top: -200px;
+  right: 50px;
+}
+
+.contactForm input, .contactForm textarea {
+  background-color: #FFF;
 }
