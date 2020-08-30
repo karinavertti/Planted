@@ -12,7 +12,8 @@ $buttonColor: #0E902D;
 // HEADER & NAVIGATION STYLES
 // **************************************************** //
 
-.blogHeader {
+.blogHeader,
+.contactHeader {
     background-image: url(../assets/blog-header-1.jpg);
     height: 465px;
     background-size: cover;
@@ -20,7 +21,7 @@ $buttonColor: #0E902D;
     background-repeat: no-repeat;
 }
     
-    .topBar {
+    .topBarSecondary {
         background: #000;
     }
     
@@ -226,5 +227,11 @@ $buttonColor: #0E902D;
                     font-size: 1.6rem;
                     letter-spacing: 1px;
                     padding: 14px 25px 10px 25px;
+                }
+
+                button:hover,
+                button:focus {
+                    font-size: 1.8rem;
+                    background: $darkGreen;
                 }
             

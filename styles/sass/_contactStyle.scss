@@ -14,10 +14,7 @@ $buttonColor: #0E902D;
 
 .contactHeader {
     background-image: url(../assets/contact-header-1.jpg);
-    height: 465px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 
 // get in touch // hero header other pages
@@ -46,7 +43,14 @@ h5 {
     width: 15%;
     display: flex;
     justify-content: space-between;
+    
+    i:hover,
+    i:focus {
+        font-size: 2.2rem;
+        color: $darkGreen;
+    }
 }
+
 
 .email {
     padding-top: 10px;

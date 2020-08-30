@@ -50,6 +50,15 @@ $buttonColor: #0E902D;
                     font-size: 1.8rem;
                     padding-left: 44px;
                 }
+
+                a:hover,
+                a:focus {
+                    color: $highlight;
+                }
+
+                i {
+                    display: none;
+                }
             }
         }
         
@@ -107,6 +116,12 @@ $buttonColor: #0E902D;
         letter-spacing: 1px;
         padding: 14px 25px 10px 25px;
     }
+
+    .readMore:hover,
+    .readMore:focus {
+        font-size: 1.8rem;
+        background: $darkGreen;
+    }
     
     // what is planted
     h2 {
@@ -124,6 +139,14 @@ $buttonColor: #0E902D;
         display: grid;
         grid-template-columns: 2fr 0.8fr 2fr;
         grid-template-rows: 625px;
+    }
+
+    // upcoming, unique
+    h3 {
+        font-family: $headingFont;
+        font-weight: bold;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
     }
     
     .postLeft {
@@ -174,13 +197,6 @@ $buttonColor: #0E902D;
         }
     }
     
-    // upcoming, unique
-    h3 {
-        font-family: $headingFont;
-        font-weight: bold;
-        font-size: 2.8rem;
-        letter-spacing: 1px;
-    }
     
     // **************************************************** //
     // MIDDLE MENU STYLES
@@ -236,6 +252,7 @@ $buttonColor: #0E902D;
         padding: 100px 0 80px 0;
         img {
             box-shadow: 15px 15px $highlight;
+            object-fit: cover;
         }
         article{
             padding-left: 100px;
@@ -275,8 +292,204 @@ footer {
     text-align: center;
     color: #fff;
     padding: 5px 0;
+
+    a:hover,
+    a:focus {
+        font-weight: bold;
+    }
 }
 
+
+// **************************************************** //
+// MEDIA QUERY STYLES
+// **************************************************** //
+
+// SMALL DESKTOPS //
+@media (max-width: 1120px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+}
+
+// PORTRAIT AND SMALLER DESKTOPS
+@media (max-width: 940px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .founderFlex {
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 30%;
+        }
+        article {
+            padding-left: 0;
+            padding-top: 60px;
+            text-align: center;
+        }
+    }
+
+}
+
+// Landscape phone to portrait tablet //
+@media (max-width: 768px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .homeHeader {
+        height: 57vh;
+    }
+
+    .homeHeading {
+        h1 {
+        font-size: 11rem;
+        }
+
+        img {
+            bottom: -50px;
+        }
+    }
+
+.blogPosts {
+    grid-template-columns: repeat(1, 1fr);
+    img {
+        width: 60%;
+    }
+    article {
+        padding: 0;
+        width: 80%;
+    }
+    
+    .postLeft {
+        height: 515px;
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 100px;
+    }
+
+    .postRight {
+        height: 515px;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+}
+
+.midFlex {
+    display: block;
+}
+
+.midMenuElement {
+    padding-bottom: 20px;
+}
+
+.galleryGrid {
+    grid-template-columns: repeat(1, 1fr);
+    img {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+}
+
+// Landscape phone to portrait tablet //
+@media (max-width: 650px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .homeHeader {
+        height: 50vh;
+    }
+
+    .topBar {
+        flex-direction: column;
+        .logo {
+            margin: 0 auto;
+            padding-bottom: 25px;
+        }
+        ul {
+            margin: 0 auto;
+            
+            a {
+                display:none;
+            }
+            
+            i {
+                font-size: 2.2rem;
+                display: block;
+                color: #FFF;
+            }
+        }
+    }
+
+    .homeHeading {
+        height: 70%;
+        h1 {
+            font-size: 9rem;
+        }
+
+        img {
+            width: 55%;
+        }
+    }
+
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .homeHeading {
+        h1 {
+            font-size: 7.5rem;
+        }
+
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .blogPosts {
+        grid-template-rows: 545px;
+        img {
+            width: 70%
+        }
+        .postLeft {
+            height: 465px;
+            padding-right: 50px;
+        }
+        .postRight {
+            height: 465px;
+            padding-left: 50px;
+        }
+    }
+
+    .founderFlex {
+        img {
+            width: 50%;
+        }
+    }
+
+    .galleryGrid {
+        img {
+            width: 80%;
+        }
+    }
+
+}
 
 // **************************************************** //
 // SCSS IMPORTS
