@@ -38,14 +38,18 @@ h5 {
 }
 
 .social {
-    color: $buttonColor;
-    font-size: 2rem;
     width: 15%;
     display: flex;
     justify-content: space-between;
+
+    a {
+        color: $buttonColor;
+        font-size: 2rem;
+
+    }
     
-    i:hover,
-    i:focus {
+    a:hover,
+    a:focus {
         font-size: 2.2rem;
         color: $darkGreen;
     }

@@ -20,7 +20,7 @@ $buttonColor: #0E902D;
     background-position: center;
     background-repeat: no-repeat;
 }
-    
+
     .topBarSecondary {
         background: #000;
     }
@@ -71,7 +71,7 @@ $buttonColor: #0E902D;
     .heading7 {
         font-family: $headingFont;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2rem;
         letter-spacing: 1.2px;
     }
     
@@ -109,7 +109,6 @@ $buttonColor: #0E902D;
     }
     
     .postImg {
-        
         box-shadow: -15px 15px $highlight;
         position: absolute;
         width: 56.5%;
